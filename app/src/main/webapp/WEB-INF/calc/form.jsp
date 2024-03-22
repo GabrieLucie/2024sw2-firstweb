@@ -6,12 +6,19 @@
     <title>Calc</title>
 </head>
 <body>
-    <form action="/soma" method="post">
+    <form action="/calc" method="post">
         <label>Num A</label>
-        <input type="number" name="NumA"/>
+        <input type="number" name="numA"/>
         <label>Num B</label>
-        <input type="number" name="NumB"/>
-        <button type="submit">Caluclar</button>
+        <input type="number" name="numB"/>
+        <label>Operação</label>
+        <select name="operacao">
+            <option value="soma">Soma</option>
+            <option value="subtracao">Subtração</option>
+            <option value="multiplicacao">Multiplicação</option>
+            <option value="divisao">Divisão</option>
+        </select>
+        <button type="submit">Calcular</button>
     </form>
     <hr />
     <p>${resultado}</p>
